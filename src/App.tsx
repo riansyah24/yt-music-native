@@ -2,14 +2,16 @@ import { useEffect } from 'react'
 import { Browser } from '@capacitor/browser';
 
 const App = () => {
-  const openCapacitorSite = async () => {
+  const openCapacitorSite = async ():Promise<void> => {
     await Browser.open({ 
       url: 'https://music.youtube.com/',
       windowName: "_blank"
     });
   };
   
-  useEffect(() => openCapacitorSite(), [])
+  useEffect(() => {
+    openCapacitorSite()
+  }, [])
   
   return (
     <div></div>
