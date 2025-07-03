@@ -5,23 +5,17 @@ const config: CapacitorConfig = {
   appName: 'YT Music',
   webDir: 'dist',
   plugins: {
-    SplashScreen: {
-      launchShowDuration: 3000,
-      launchAutoHide: true,
-      launchFadeOutDuration: 3000,
-      backgroundColor: "#ff0000",
-      androidSplashResourceName: "splash",
-      androidScaleType: "CENTER_CROP",
-      showSpinner: true,
-      androidSpinnerStyle: "large",
-      iosSpinnerStyle: "small",
-      spinnerColor: "#ffffff",
-      splashFullScreen: true,
-      splashImmersive: true,
-      layoutName: "YT Music",
-      useDialog: true,
-    },
-  },
+  SplashScreen: {
+     launchShowDuration: 3000,
+     launchAutoHide: true,
+     backgroundColor: "#ff0000",
+     androidSplashResourceName: "splash",
+     androidScaleType: "FIT_XY",
+     splashFullScreen: true,
+     splashImmersive: true,
+     useDialog: false,
+   }
+  }
 };
 
 export default config;
